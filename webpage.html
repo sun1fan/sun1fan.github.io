@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孙一凡 作 朝阳医院药品销售分析</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: black;
+        }
+        p {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        .highlight {
+            color: black; /* 设置字体颜色为黑色 */
+            font-weight: bold; /* 加粗文本 */
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;  /* 设置表格宽度为80% */
+            border-collapse: collapse;  /* 合并表格边框 */
+        }
+        th, td {
+            padding: 8px;  /* 设置单元格的内边距 */
+            border: 1px solid black;  /* 设置边框 */
+            text-align: center; /* 单元格内容居中 */
+        }
+        th {
+            background-color: #f2f2f2;  /* 设置表头背景颜色 */
+        }
+    </style>
+</head>
+<body>
+    <h1>朝阳医院药品销售分析<br>by 孙一凡</h1>
+
+    <h2>一、研究背景</h2>
+    <p>随着医疗行业的快速发展和医院管理水平的不断提升，药品销售作为医院运营中的重要组成部分，
+        直接影响到医院的经济效益和患者的用药体验。朝阳医院作为一个大型综合医院，承担了大量的医疗服务工作，
+        药品的采购、库存、销售以及财务管理等方面的工作需要有效的数据支持与分析。
+        传统的药品销售管理方式已经不能满足日益增长的需求，如何<span class="highlight">提高药品销售的效率和科学性，优化资源配置</span>，
+        减少药品浪费，已成为医院管理中的重要课题。</p>
+
+    <p>近年来，数据挖掘和分析技术在医疗行业的应用愈加广泛，通过数据分析可以帮助医院更好地了解药品销售的趋势、
+        市场需求、库存状况以及各类药品的销售表现。因此，利用数据分析方法对朝阳医院的药品销售数据进行深入分析，
+        不仅能够帮助医院优化药品销售策略，还能够提升医院整体的运营效率和服务质量。</p>
+
+    <h2>二、研究目的</h2>
+    <p>本研究的主要目的是通过对朝阳医院药品销售数据的分析，揭示药品销售的规律性和市场趋势，
+        为医院的药品采购、库存管理、定价策略等方面提供科学的决策依据，达到以下目标：</p>
+    <p><span class="highlight">1.揭示药品销售趋势：</span>分析药品销售的周期性变化、季节性需求以及药品类别的销售差异，帮助医院更精准地预测药品的销售需求。</p>
+    <p><span class="highlight">2.优化库存管理：</span>通过分析药品的销售情况，找出库存积压的药品和热销药品，帮助医院优化库存结构，减少药品浪费。</p>
+    <p><span class="highlight">3.制定合理的采购与定价策略：</span>通过销售数据分析，帮助医院制定更科学的药品采购计划，并根据市场需求合理调整药品定价。</p>
+    <p><span class="highlight">4.提升医院运营效率：</span>通过药品销售数据分析，找出管理中存在的问题，提出优化建议，提升医院的整体运营效率和服务质量。</p>
+
+
+    <h2>三、研究意义</h2>
+    <p>本研究具有重要的理论价值和实践意义：</p>
+    <p><span class="highlight">1.理论价值：</span>通过对药品销售数据的深入分析，探讨药品销售的规律性和市场需求的变化趋势，丰富了医院管理和药品销售分析的理论研究。</p>
+    <p><span class="highlight">2.实践意义：</span>本研究能够为医院药品采购、库存管理、销售策略等方面提供科学的数据支持，帮助医院实现资源的最优配置，提升运营效率。</p>
+    <p><span class="highlight">3.提高医院药品管理水平：</span>通过精准的销售数据分析，帮助医院实现科学化的药品管理，降低运营成本，减少药品浪费。</p>
+    <p><span class="highlight">4.增强医院决策能力：</span>基于数据分析的销售趋势预测，帮助医院制定更具前瞻性和合理性的药品采购、定价等决策。</p>
+    <p><span class="highlight">5.提升患者用药体验：</span>通过合理的药品管理和充足的库存保障，避免因药品短缺或过期造成的患者不满，提升患者的用药体验。</p>
+
+    <h2>四、原始数据展示（部分）</h2>
+    <table>
+    <thead>
+          <tr>
+              <th>购药时间</th><th>社保卡号</th><th>商品编码</th><th>商品名称</th>
+              <th>销售数量</th><th>应收金额</th><th>实收金额</th>
+          </tr>
+    </thead>
+    <tbody>
+          <tr>
+              <td>2018-01-01 星期五</td><td>001616528</td><td>236701</td>
+              <td>强力VC银翘片</td><td>6</td><td>82.8</td><td>69</td>
+          </tr>
+          <tr>
+              <td>2018-01-02 星期六</td><td>001616528</td><td>236701</td>
+              <td>清热解毒口服液</td><td>1</td><td>28</td><td>24.64</td>
+          </tr>
+          <tr>
+              <td>2018-01-06 星期三</td><td>0012602828</td><td>236701</td>
+              <td>感康</td><td>2</td><td>16.8</td><td>15</td>
+          </tr>
+          <tr>
+              <td>2018-01-11 星期一</td><td>0010070343428</td><td>236701</td>
+              <td>三九感冒灵</td><td>1</td><td>28</td><td>28</td>
+          </tr>
+          <tr>
+              <td>2018-01-15 星期五</td><td>00101554328</td><td>236701</td>
+              <td>三九感冒灵</td><td>8</td><td>224</td><td>208</td>
+          </tr>
+
+      </tbody>
+  </table>
+
+    <h2>五、处理后的数据展示（部分）</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>销售时间</th><th>社保卡号</th><th>商品编码</th><th>商品名称</th>
+                <th>销售数量</th><th>应收金额</th><th>实收金额</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>2018-01-01</td><td>1616528.0</td><td>236701.0</td>
+              <td>强力VC银翘片</td><td>6.0</td><td>82.8</td><td>69.0</td>
+          </tr>
+          <tr>
+              <td>2018-01-01</td><td>107891628.0</td><td>861456.0</td>
+              <td>酒石酸美托洛尔片(倍他乐克)</td><td>2.0</td><td>14.0</td><td>12.6</td>
+          </tr>
+          <tr>
+              <td>2018-01-01</td><td>1616528.0</td><td>861417.0</td>
+              <td>雷米普利片(瑞素坦)</td><td>1.0</td><td>28.5</td><td>28.5</td>
+          </tr>
+          <tr>
+              <td>2018-01-01</td><td>10073966328.0</td><td>866634.0</td>
+              <td>硝苯地平控释片(欣然)</td><td>6.0</td><td>111.0</td><td>92.5</td>
+          </tr>
+          <tr>
+              <td>2018-01-01</td><td>10014289328.0</td><td>866851.0</td>
+              <td>缬沙坦分散片(易达乐)</td><td>1.0</td><td>26.0</td><td>23.0</td>
+          </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>六、分析结果展示</h2>
+    <h3>1.业务指标</h3>
+    <table style="width: 50%;">
+        <thead>
+            <tr>
+                <th>指标名称</th><th>指标值</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>总消费次数</td><td>5345</td>
+            </tr>
+            <tr>
+                <td>开始日期</td><td>2018-01-01 00:00:00</td>
+            </tr>
+            <tr>
+                <td>结束日期</td><td>2018-07-19 00:00:00</td>
+            </tr>
+            <tr>
+                <td>月份数</td><td>7</td>
+            </tr>
+            <tr>
+                <td>业务指标1：月均消费次数</td><td>890.834</td>
+            </tr>
+            <tr>
+                <td>业务指标2：月平均消费金额</td><td>50672.495</td>
+            </tr>
+            <tr>
+                <td>业务指标3：客单价</td><td>56.882</td>
+            </tr>
+            <tr>
+                <td>业务指标4：总销售额</td><td>331364.9</td>
+            </tr>
+            <tr>
+                <td>业务指标5：总实收金额</td><td>304034.97</td>
+            </tr>
+            <tr>
+                <td>业务指标6：总销售数量</td><td>15656.0</td>
+            </tr>
+            <tr>
+                <td>业务指标7：平均销售价格</td><td>21.165</td>
+            </tr>
+            <tr>
+                <td>业务指标8：客户支付率</td><td>0.918</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>2.月际变化</h3>
+    <!-- 显示本地图片 -->
+    <img src="{{ url_for('static', filename='images/月度销售量折线图.png') }}" alt="Image 1" style="width: 50%; height: auto;">
+    <!-- 图片的文字描述 -->
+    <p>由月度销售量数据可以看出，2月和7月销售量较低，4月销售量达到高峰，其他月份销售量较为稳定。
+        后续继续通过2、4、7月的销售数据查看出现这样趋势的原因。
+        如果通过其他年份的销售数据都呈现类似的趋势，可以在7月份增加药品库存。</p>
+
+    <img src="{{ url_for('static', filename='images/二月每日药品的销售数量变化趋势.png') }}" alt="Image 2" style="width: 50%; height: auto;">
+    <p>从2月每天的药品销售数量可以看出，2月每天的销售数量都处于一个较低的水平，
+        可能是因为2月过年假期去医院看病复诊的病人较少。</p>
+
+    <img src="{{ url_for('static', filename='images/四月每日药品的销售数量变化趋势.png') }}" alt="Image 3" style="width: 50%; height: auto;">
+    <p>从4月药品的销售数据可以看到，4月15日左右销售量出现一个高峰，远高于其他的每日销售量，
+        这可能是4月销售量在前七个月出现高峰的原因。</p>
+
+    <img src="{{ url_for('static', filename='images/七月每日药品的销售数量变化趋势.png') }}" alt="Image 4" style="width: 50%; height: auto;">
+    <p>显而易见，七月份的销售数据并不完整，只有前19天的。
+        在7月5日和7月15日左右出现峰值。</p>
+
+    <h3>3.销售额与销售量变化</h3>
+    <img src="{{ url_for('static', filename='images/药品月度销售额变化趋势.png') }}" alt="Image 5" style="width: 50%; height: auto;">
+    <p>从药品月度销售额可以看出，变化趋势和销售量的变化趋势基本相同，变化量不是很明显。
+       优惠金额基本保持一致，在4月份优惠力度微微加大，可能是造成4月销售量增加的原因，
+       因此定价确定之后若比其他时间优惠力度增加可以提前增加库存。</p>
+
+    <img src="{{ url_for('static', filename='images/客单价月度变化趋势.png') }}" alt="Image 6" style="width: 50%; height: auto;">
+    <p>从客单价趋势可以看出，4月份客单价较低，与之前分析的一致，与销售量增加和优惠力度增大有关。</p>
+
+    <img src="{{ url_for('static', filename='images/药品销售总量与药品类别的关系.svg') }}" alt="Image 7" style="width: 50%; height: auto;">
+    <p>从药品销售总量柱状图可以看出，大部分药品前七个月的销售量低于500个，
+       销售量前五的药品（苯磺酸氨氯地平片(安内真)、开博通、酒石酸美托洛尔片(倍他乐克)、
+       硝苯地平片(心痛定)和苯磺酸氨氯地平片(络活喜)）与其他药品累计销量差距较大，
+       同时可以看出销售量较高的药品多属于降压药类等针对慢性病的药品，应该提高这类慢性病的药品库存。
+       针对销售量较少的药品可以降低库存量，降低库存成本。</p>
+
+    <img src="{{ url_for('static', filename='images/不同类别药品的平均订单销售量.svg') }}" alt="Image 8" style="width: 50%; height: auto;">
+    <p>从平均订单销量可以看出，大部分药品的平均订单销量都低于5，
+       但缬沙坦氢氯噻嗪片(复代文)和D苯磺酸氨氯地平胶囊(丽珠优可)两类药品虽然整体销售量低，
+       但单笔订单的购买量较大，应该适当调整库存量避免出现同段时期出现多个订单库存不够的情况。</p>
+
+    <img src="{{ url_for('static', filename='images/不同药品的销量随月份变化的趋势.svg') }}" alt="Image 9" style="width: 50%; height: auto;">
+    <p>从图中可以看出，大多数药品销售量较低，部分药品有明显的峰值。
+        其中销售量最高的五种药品是苯磺酸氨氯地平片(安内真)、
+        开博通、
+        酒石酸美托洛尔片(倍他乐克)、
+        硝苯地平片(心痛定)、
+        苯磺酸氨氯地平片(络活喜)。</p>
+
+    <img src="{{ url_for('static', filename='images/销量前五的药品销售总量和月份的关系.png') }}" alt="Image 10" style="width: 50%; height: auto;">
+    <p>从销售量前五的药品的销售量变化可以看出，药品销售量变化趋势不存在明显的一致性，
+       同时销售量变化较为平稳，四月份苯磺酸氨氯地平片(安内真)销售量出现明显上涨。</p>
+
+    <img src="{{ url_for('static', filename='images/销售量前五的药品单价变化.png') }}" alt="Image 11" style="width: 50%; height: auto;">
+    <p>从药品单价的变化图可以看出药品单价没有明显的变化趋势，
+       苯磺酸氨氯地平片(安内真)药品单价4月份出现下降，可能是销售量增加的原因。
+       但是苯磺酸氨氯地平片(络活喜)单价在6月份出现下降，但是对比销售量没有出现明显变化。</p>
+
+    <img src="{{ url_for('static', filename='images/销量前五的药品优惠金额和月份的关系.png') }}" alt="Image 12" style="width: 50%; height: auto;">
+    <p>从优惠金额来看，苯磺酸氨氯地平片(安内真)的优惠金额在四月份出现峰值，与销售量趋势相同。
+        苯磺酸氨氯地平片(络活喜)和开博通优惠金额较高，然而其单价也较高。
+        酒石酸美托洛尔片(倍他乐克)和硝苯地平片(心痛定)优惠金额较低，当然其单价也较低。</p>
+
+    <img src="{{ url_for('static', filename='images/药品复购率.png') }}" alt="Image 13" style="width: 50%; height: auto;">
+    <p>药品复购率占73.3%，而未复购率仅有26.6%，这说明大多数顾客会多次购药。
+        所售药品多用于长期慢性病，用药疗程要求长期服药，促成了顾客多次购药的局面。</p>
+
+</body>
+</html>
