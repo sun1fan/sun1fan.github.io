@@ -1,3 +1,9 @@
+---
+layout: default
+title: Another page
+description: This is just another page
+---
+
 <div>
 <table border="0">
   <tr>
