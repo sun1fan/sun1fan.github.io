@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Yifan Sun
-description: 
+description: Personal Page
 ---
 
 
