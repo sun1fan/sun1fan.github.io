@@ -31,6 +31,8 @@ description: 个人主页
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
     <span>左侧文字</span>
     <span>右侧文字</span>
+  <span>左侧文字</span>
+    <span>右侧文字</span>
 </div>
 
 
