@@ -28,13 +28,7 @@ description: 个人主页
 <p>孙一凡，西北农林科技大学数据科学与大数据技术专业大三在读，预计于2026年7月毕业。</p>
 <hr>
 
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-    <span><h3>基于证据理论的多属性数据融合与决策研究</h3></span>
-    <span>右侧文字</span>
-  <br>
-  <span>左侧文字</span>
-    <span>右侧文字</span>
-</div>
+
 
 
 
@@ -43,17 +37,13 @@ description: 个人主页
 
 
 <h2>项目研究</h2>
-<div style="width: 100%;">
-    <table style="width: 100%;">
-        <tr>
-            <td style="text-align: left;"><h3>基于证据理论的多属性数据融合与决策研究</h3></td>
-            <td style="text-align: right;">项目主持人</td>
-        </tr>
-        <tr>
-            <td style="text-align: left;">西北农林科技大学·大学生创新创业训练计划项目</td>
-            <td style="text-align: right;">2024.04 -- 2025.04</td>
-        </tr>
-    </table>
+
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+    <span><h3>基于证据理论的多属性数据融合与决策研究</h3></span>
+    <span>项目主持人</span>
+  <br>
+  <span>西北农林科技大学·大学生创新创业训练计划项目</span>
+    <span>2024.04 -- 2025.04</span>
 </div>
 
 
