@@ -34,15 +34,26 @@ description: 个人主页
 </div>
 
 
+
 <h2>最新消息</h2>
 <p>【2025/4/6】建立本站。</p>
 
 
 <h2>项目研究</h2>
-<h3>基于证据理论的多属性数据融合与决策研究</h3>
-<p><strong>担任职责：</strong>项目主持人</p>
-<p><strong>项目来源：</strong>西北农林科技大学·大学生创新创业训练计划项目</p>
-<p><strong>在研时间：</strong>2024.04 -- 2025.04</p>
+<div style="width: 100%;">
+    <table style="width: 100%;">
+        <tr>
+            <td style="text-align: left;"><h3>基于证据理论的多属性数据融合与决策研究</h3></td>
+            <td style="text-align: right;">项目主持人</td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">西北农林科技大学·大学生创新创业训练计划项目</td>
+            <td style="text-align: right;">2024.04 -- 2025.04</td>
+        </tr>
+    </table>
+</div>
+
+
 <ul>
     <li><strong>问题导向：</strong>基本概率指派的质量直接影响着决策的效果，因此如何生成高质量基本概率指派是不确定性建模的重要问题。</li>
     <li><strong>研究动机：</strong>数据所代表的信息通常被直接使用，而这部分信息的对立面所表示的信息却被忽视。虽然逆运算可以得到对立面的信息，但是现有的逆运算方法只能用于概率分布。</li>
