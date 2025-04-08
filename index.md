@@ -4,6 +4,16 @@ title: 孙一凡
 description: 个人主页
 ---
 
+<style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* 根据需要调整宽度 */
+            padding: 10px; /* 可选的内边距 */
+            box-sizing: border-box; /* 确保内边距不影响宽度 */
+        }
+</style>
+
 <div>
 <table border="0">
   <tr>
@@ -28,8 +38,15 @@ description: 个人主页
 <p>孙一凡，西北农林科技大学数据科学与大数据技术专业大三在读，预计于2026年7月毕业。</p>
 <hr>
 
+<div class="container">
+    <span>左侧文字</span>
+    <span>右侧文字</span>
+</div>
+
+
 <h2>最新消息</h2>
 <p>【2025/4/6】建立本站。</p>
+
 
 <h2>项目研究</h2>
 <h3>基于证据理论的多属性数据融合与决策研究</h3>
