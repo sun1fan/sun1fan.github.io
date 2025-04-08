@@ -24,8 +24,8 @@ description: Personal Page
 </table>
 </div>
 
----
+<hr>
 
-More infomation is under construction.
+<p>More information is to be added.</p>
 
----
+<hr>
