@@ -41,8 +41,9 @@ description: 个人主页
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
     <span><h3>基于证据理论的多属性数据融合与决策研究</h3></span>
     <span>项目主持人</span>
-  <br>
-  <span>西北农林科技大学·大学生创新创业训练计划项目</span>
+</div>
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+    <span>西北农林科技大学·大学生创新创业训练计划项目</span>
     <span>2024.04 -- 2025.04</span>
 </div>
 
