@@ -43,7 +43,7 @@ description: 个人主页
 - 研究方法：本研究借助逆运算方法得到已有数据的反面信息，在进行建模时充分考虑不同子集的信息特性。在确定辨识框架后，将概率分布的反面信息以不同的权重参数分配给辨识框架的幂集分布下的各个子集，最后聚合各个子集分配到的信息并通过归一化生成基本概率指派。
 - 实验结果：提出的方法在现实世界数据集上的分类正确高于概率方法，各权重参数分配方式之间有差别。
 - 投稿论文：向中科院一区期刊Engineering Applications of Artificial Intelligence投稿该论文。
-- 发表论文：以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表<a href="https://doi.org/10.1109/ACAI63924.2024.10899481">论文</a>。
+- 发表论文：以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表<a href="https://doi.org/10.1109/ACAI63924.2024.10899481" target="_blank" rel="noopener noreferrer">论文</a>。
 - 获批软著：以第一贡献者身份获批一项软件著作权《农业数据融合与可视化系统》，登记号24SR1495046。
 
 #### 公司/学校/研究所（2017.9~至今）
