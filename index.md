@@ -29,7 +29,7 @@ description: 个人主页
 <hr>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-    <span>左侧文字</span>
+    <span><h3>基于证据理论的多属性数据融合与决策研究</h3></span>
     <span>右侧文字</span>
   <span>左侧文字</span>
     <span>右侧文字</span>
