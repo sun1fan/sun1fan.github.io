@@ -24,8 +24,7 @@ description: Personal Page
 </table>
 </div>
 
-<hr>
 
-<p>More information is to be added.</p>
-
-<hr>
+<h2>More information is to be added.</h2>
+<!-- <hr>
+<hr> -->
