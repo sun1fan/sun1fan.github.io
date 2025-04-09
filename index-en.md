@@ -26,5 +26,6 @@ description: Personal Page
 
 
 <h2>More information is to be added.</h2>
+
 <!-- <hr>
 <hr> -->
