@@ -10,9 +10,9 @@ description: 个人主页
     <td width="75%">
       <h1>孙一凡</h1>
       <p><b>本科生</b></p>
-      <p><b>西北农林大学信息工程学院</b></p>
+      <p><b><a href="https://nwafu.edu.cn" target="_blank" rel="noopener noreferrer">西北农林科技大学</a> 信息工程学院</b></p>
       <p><b>邮箱：1fan.sun@nwafu.edu.cn</b></p>
-<!--       <p><b>地址：××市××区××路××号××大学，××楼，邮编×××</b></p> -->
+      <p><b>籍贯：<a href="https://baike.baidu.com/item/%E6%B3%B0%E5%AE%89%E5%B8%82/2459732" target="_blank" rel="noopener noreferrer">山东省泰安市</a>(仅向山东省高校提供)</b></p>
       <p><b>联系方式：13562805263</b></p>
       <p><a href="/index-en.html">English Version</a></p>
     </td>
@@ -45,7 +45,7 @@ description: 个人主页
 <h2>项目经历</h2>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<span><h3>一、逆运算转换视角下的基本概率指派生成方法</h3></span>
+<span>一、逆运算转换视角下的基本概率指派生成方法</span>
 <span>项目主持人</span>
 </div>
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
@@ -65,7 +65,7 @@ description: 个人主页
 </ul>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<h3><span>二、基于距离度量的基本概率指派生成方法及其在证据决策树上的应用</span></h3>
+<span>二、基于距离度量的基本概率指派生成方法及其在证据决策树上的应用</span>
 <span>项目主持人</span>
 </div>
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
@@ -83,7 +83,7 @@ description: 个人主页
 </ul>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<h3><span>三、复数信念散度测量及其在信息融合中的应用</span></h3>
+<span>三、复数信念散度测量及其在信息融合中的应用</span>
 <span>主要成员</span>
 </div>
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
@@ -102,7 +102,7 @@ description: 个人主页
 </ul>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<h3><span>四、证据理论与深度学习</span></h3>
+<span>四、证据理论与深度学习</span>
 <span></span>
 </div>
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
