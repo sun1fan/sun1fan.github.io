@@ -45,7 +45,7 @@ description: 个人主页
 <h2>项目经历</h2>
 
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<h3><span>一、逆运算转换视角下的基本概率指派生成方法</span></h3>
+<span><h3>一、逆运算转换视角下的基本概率指派生成方法</h3></span>
 <span>项目主持人</span>
 </div>
 <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
