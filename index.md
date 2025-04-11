@@ -44,11 +44,11 @@ description: 个人主页
 
 <h2>项目经历</h2>
 
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<span>一、逆运算转换视角下的基本概率指派生成方法</span>
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
+<h3><span>一、逆运算转换视角下的基本概率指派生成方法</span></h3>
 <span>项目主持人</span>
 </div>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <span>西北农林科技大学·大学生创新创业训练计划项目</span>
 <span>2024.04 -- 2025.04</span>
 </div>
@@ -64,11 +64,11 @@ description: 个人主页
 <li><strong>获批软著：</strong>以第一贡献者身份获批一项软件著作权《农业数据融合与可视化系统》，登记号24SR1495046。</li>
 </ul>
 
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<span>二、基于距离度量的基本概率指派生成方法及其在证据决策树上的应用</span>
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
+<h3><span>二、基于距离度量的基本概率指派生成方法及其在证据决策树上的应用</span></h3>
 <span>项目主持人</span>
 </div>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <span>西北农林科技大学·大学生创新创业训练计划项目</span>
 <span>2024.06 -- 2025.03</span>
 </div>
@@ -82,11 +82,11 @@ description: 个人主页
 <li><strong>成果产出：</strong>以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表<a href="https://doi.org/10.1109/ACAI63924.2024.10899481" target="_blank" rel="noopener noreferrer">论文</a>。</li>
 </ul>
 
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<span>三、复数信念散度测量及其在信息融合中的应用</span>
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
+<h3><span>三、复数信念散度测量及其在信息融合中的应用</span></h3>
 <span>主要成员</span>
 </div>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <span>大创项目扩展</span>
 <span> -- </span>
 </div>
@@ -101,11 +101,11 @@ description: 个人主页
 <li><strong>成果产出：</strong>以第二作者身份投稿中科院三区期刊Computational and Applied Mathematics，将在小修后录用。</li>
 </ul>
 
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
-<span>四、证据理论与深度学习</span>
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
+<h3><span>四、证据理论与深度学习</span></h3>
 <span></span>
 </div>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <span>自行研究</span>
 <span> -- </span>
 </div>
@@ -124,11 +124,11 @@ description: 个人主页
 </ul>
 
 <h2>社会实践</h2>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <h3><span>第三十届中国杨凌农业高新成果博览会</span></h3>
 <span>会场志愿者</span>
 </div>
-<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box;">
+<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; box-sizing: border-box; margin: 0;">
 <span>陕西·杨凌</span>
 <span>2023.09.19 -- 2023.09.23</span>
 </div>
