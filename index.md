@@ -12,7 +12,7 @@ description: 个人主页
       <p><b>本科生</b></p>
       <p><b><a href="https://nwafu.edu.cn" target="_blank" rel="noopener noreferrer">西北农林科技大学</a> 信息工程学院</b></p>
       <p><b>邮箱：1fan.sun@nwafu.edu.cn</b></p>
-      <p><b>籍贯：<a href="https://baike.baidu.com/item/%E6%B3%B0%E5%AE%89%E5%B8%82/2459732" target="_blank" rel="noopener noreferrer">山东省泰安市</a>(仅向山东省高校提供)</b></p>
+<!--       <p><b>籍贯：<a href="https://baike.baidu.com/item/%E6%B3%B0%E5%AE%89%E5%B8%82/2459732" target="_blank" rel="noopener noreferrer">山东省泰安市</a>(仅向山东省高校提供)</b></p> -->
       <p><b>联系方式：13562805263</b></p>
       <p><a href="/index-en.html">English Version</a></p>
     </td>
