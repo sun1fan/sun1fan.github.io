@@ -191,9 +191,9 @@
             <li><p><strong>研究动机：</strong>数据所代表的信息通常被直接使用，而这部分信息的对立面所表示的信息却被忽视。虽然逆运算可以得到对立面的信息，但是现有的逆运算方法只能用于概率分布。</p></li>
             <li><p><strong>主要创新：</strong>本研究借助逆运算方法得到已有数据的反面信息，并且在进行建模时充分考虑不同子集的信息特性。</p></li>
             <li><p><strong>研究方法(实验步骤)：</strong>在确定辨识框架后，将概率分布的反面信息以不同的权重参数分配给辨识框架的幂集分布下的各个子集，最后聚合各个子集分配到的信息并通过归一化生成基本概率指派。</p></li>
-            <li><img src="static/images/negation/procedures.png" alt="逆运算转换的思路示意图" title="逆运算转换的思路示意图" width="800" style="height: auto;"></li>
+            <li><img src="/negation/procedures.png" alt="逆运算转换的思路示意图" title="逆运算转换的思路示意图" width="800" style="height: auto;"></li>
             <li><p><strong>实验结果：</strong>相较于概率方法，提出的方法在iris数据集和wine数据集上的分类正确率分别提高了1%和2.2%(取前50组划分的平均值)，而且数据不确定性越大，提出方法的优势越明显。</p></li>
-            <li><img src="static/images/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="iris数据集的实验结果" width="600" style="height: auto;"><img src="static/images/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="wine数据集的实验结果" width="600" style="height: auto;"></li>
+            <li><img src="/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="iris数据集的实验结果" width="600" style="height: auto;"><img src="/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="wine数据集的实验结果" width="600" style="height: auto;"></li>
             <li><p><strong>原因分析：</strong>【不确定性表达与冲突处理】1.BPA支持集合级不确定性，允许对复合命题分配概率，显式表达“未知”，避免强行分配概率。Dempster组合规则可合并不同来源的BPA，实现更灵活的冲突处理。</p></li>
             <li><p><strong>可能的改进：</strong>1.为什么不同的权重参数设置之间区别不大？1.1或许是设置的权重值区别本来就不大。 1.2或许是三元素的辨识框架拉不开权重值的差距。</p></li>
             <li><p><strong>成果产出：</strong>向中科院一区期刊Engineering Applications of Artificial Intelligence投稿该论文。</p></li>
@@ -215,7 +215,7 @@
             <li><p><strong>研究动机：</strong>传统决策树对不确定信息的处理会损失分类正确率。已有研究表明证据理论相关概念结合决策树模型能提高其分类表现。然而，如何构建优秀的证据决策树是制约其推广应用的重要难题。</p></li>
             <li><p><strong>主要创新：</strong>本研究实现了基于不同距离度量方法的基本概率指派生成模型，用多种不确定性度量指标以控制证据决策树的分支并且比较其与传统决策树在分类任务上的表现差异。</p></li>
             <li><p><strong>实验结果：</strong>1.与传统决策树方法相比，选择的两种熵值方法在iris数据集上的分类正确率分别提高了1.3%和1.6%。 2.Deng熵的表现比Nguyen熵更好。 3.不同的距离度量对结果影响较小。</p></li>
-            <li><img src="static/images/decision tree/Results of each method by Nguyen entropy.png" alt="iris数据集上Nguyen熵的实验结果" title="iris数据集上Nguyen熵的实验结果" width="600" style="height: auto;"><img src="static/images/decision tree/Results of each method by Deng entropy.png" alt="iris数据集上Deng熵的实验结果" title="iris数据集上Deng熵的实验结果" width="600" style="height: auto;"></li>
+            <li><img src="/decision tree/Results of each method by Nguyen entropy.png" alt="iris数据集上Nguyen熵的实验结果" title="iris数据集上Nguyen熵的实验结果" width="600" style="height: auto;"><img src="/decision tree/Results of each method by Deng entropy.png" alt="iris数据集上Deng熵的实验结果" title="iris数据集上Deng熵的实验结果" width="600" style="height: auto;"></li>
             <li><p><strong>原因分析：</strong>【对决策树的作用机理】1.1证据理论领域的熵值能有效地度量不确定性，从而保证分割属性按信息含量的降序排列。1.2多个区间的使用保证数据被更合理地划分。 【熵值特性】2.1Deng熵考虑幂集基数，能更好衡量不确定性的粒度。对非单子集(如{A,B})赋予更高不确定性，更符合DST的初衷。2.2Nguyen熵是基于BPA的Shannon熵扩展。它仅依赖BPA值，忽略幂集结构，可能低估冲突证据的不确定性。 【距离性质】3.1这两种距离度量对测试样本与训练样本之间差异性的量化能力相近。3.2也可能与数据分布有关。</p></li>
             <li><p><strong>可能的改进：</strong>1.为什么没有剪枝策略？1.因为证据决策树几乎没有使用剪枝策略，只有简单的预剪枝。</p></li>
             <li><p><strong>成果产出：</strong>以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表论文<a href="https://doi.org/10.1109/ACAI63924.2024.10899481" target="_blank" rel="noopener noreferrer">论文链接</a>。</p></li>
