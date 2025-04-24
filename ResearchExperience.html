@@ -4,143 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>孙一凡 | Yifan Sun</title>
-    <style>
-        body {
-        margin-left: 30px;
-        margin-top: 30px;
-        margin-right: 30px;
-        margin-bottom: 50px;
-        background-color: #CCCCCC;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-<!--            background-image: url("static/星空之下.jpg");-->
-<!--            background-size: cover;       /* 让图片覆盖整个背景 */-->
-<!--            background-repeat: no-repeat; /* 防止图片重复 */-->
-<!--            background-position: center; /* 图片居中显示 */-->
-<!--            background-attachment: fixed; /* 固定背景（可选） */-->
-<!--            /*渐变背景必须放在这下面，并且哪个background在最后一行就显示哪个的样式*/-->
-
-<!--            background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);-->
-<!--            background: radial-gradient(circle, #ff9a9e, #fad0c4);-->
-<!--            background: linear-gradient(to bottom, #699ECA, #8ED3D8);-->
-<!--            background: linear-gradient(to bottom, #8FB4DC, #8ED3D8);-->
-
-        }
-
-        .p-container {                         /*这是标题块、个人信息块、自我介绍块的类样式，短块*/
-          display: flex; /* 重新启用flex */
-          justify-content: center; /* 水平居中 */
-          max-width: 800px;          /*若设置了最大宽度，则居中分布，否则居左分布*/
-          width: 80%;
-          margin: 20px auto; /* 改为auto实现左右居中 */
-<!--          background-color: rgba(255, 255, 255, 0.5);-->
-          border-radius: 5px;
-        }
-        .desc {                         /*这是标题块、个人信息块、自我介绍块的类样式，短块*/
-          display: flex; /* 重新启用flex */
-          justify-content: center; /* 水平居中 */
-          max-width: 100%;
-          width: 1000px;
-          margin: 20px auto; /* 改为auto实现左右居中 */
-<!--          background-color: rgba(255, 255, 255, 0.5);-->
-          border-radius: 5px;
-        }
-
-        p {
-          font-size: 20px;
-          line-height: 1.6;
-          text-align: justify;
-          text-indent: 2em;
-          padding: 15px 25px;
-          margin: 0; /* 移除旧版margin:auto */
-          width: 100%; /* 占满容器宽度 */
-        }
-        .toc {                                                 /*这是目录块的类样式*/
-        padding: 15px 25px;
-        border-radius: 5px;
-        text-align: left; /* 内部内容左对齐 */
-        width: fit-content; /* 让宽度适应内容 */
-        max-width: 80%; /* 可选：限制最大宽度 */
-        margin: 20px auto; /* 改为auto实现左右居中 */
-        }
-       .toc h2 {
-        margin-top: 0;
-        color: #333;
-        text-align: center; /* 标题居中 */
-      }
-       .toc ul {
-        list-style-type: none;
-        padding-left: 20px; /* 恢复适当的缩进 */
-        margin: 0;
-      }
-       .toc li {
-        margin: 8px 0;
-      }
-       .toc a {
-        text-decoration: none;
-        color: #0066cc;
-        transition: color 0.3s;
-        display: inline-block;
-      }
-       .toc a:hover {
-        color: #004499;
-        text-decoration: underline;
-      }
-        .item {                                   /*这是内容块的类样式，长块*/
-        padding: 15px 25px;
-        text-align: left; /* 内部内容左对齐 */
-        width: fit-content; /* 让宽度适应内容 */
-<!--        max-width: 80%; /* 可选：限制最大宽度 */-->
-        margin: 20px auto; /* 改为auto实现左右居中 */
-<!--        background-color: rgba(255, 255, 255, 0.5);-->
-        border-radius: 5px;
-        }
-        .item ul {
-        list-style-type: none;  /*去掉项前点号*/
-            margin: 0;
-            padding: 0;
-        }
-        .item li {
-            line-height: 1.2;
-            margin-bottom: 5px;
-            padding-left: 1em; /* 控制列表缩进 */
-        }
-        .item li p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 1000px;
-            margin: 0 auto;
-            background-color: white;
-        }
-        .header {
-            background-color: #669999;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .nav {
-            background-color: #F0F0F0;
-            margin: 20px 0;
-        }
-        .nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav li {
-            flex: 1;
-            text-align: center;
-            padding: 10px;
-        }
-
-
-
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
 <div class="container">
@@ -156,13 +20,11 @@
           <p><a href="/index-en.html">English Version</a></p>
         </td>
         <td width="25%">
-          <img src="/static/myavatar_white.jpg" width="100%">
+          <img src="/static/myavatar_white.jpg" width="80%">
         </td>
       </tr>
     </table>
     </div>
-
-    <h2>温馨提示：此网站内容正在持续更新中，所示信息可能不是最新的，请您见谅。</h2>
 
     <div class="nav">
         <ul>
@@ -175,28 +37,32 @@
         </ul>
     </div>
 
+    <h2>温馨提示：此网站内容正在持续更新中，所示信息可能不是最新的，请您见谅。</h2>
+
 <!--    <div class="p-container"><h1 id="section2">二、项目经历</h1></div>-->
 
     <div class="p-container">
         <h2>一、逆运算转换视角下的基本概率指派生成方法</h2>
     </div>
+
     <div class="desc">
         <p>项目主持人</p>
         <p>西北农林科技大学<br>大学生创新创业训练计划项目</p>
         <p>2024.04 -- 2025.04</p>
     </div>
+
     <div class="item">
         <ul>
             <li><p><strong>研究目的：</strong>基本概率指派的质量直接影响着决策的效果，因此如何生成高质量基本概率指派是不确定性建模的重要问题。</p></li>
             <li><p><strong>研究动机：</strong>数据所代表的信息通常被直接使用，而这部分信息的对立面所表示的信息却被忽视。虽然逆运算可以得到对立面的信息，但是现有的逆运算方法只能用于概率分布。</p></li>
             <li><p><strong>主要创新：</strong>本研究借助逆运算方法得到已有数据的反面信息，并且在进行建模时充分考虑不同子集的信息特性。</p></li>
             <li><p><strong>研究方法(实验步骤)：</strong>在确定辨识框架后，将概率分布的反面信息以不同的权重参数分配给辨识框架的幂集分布下的各个子集，最后聚合各个子集分配到的信息并通过归一化生成基本概率指派。</p></li>
-            <li><img src="/static/images/negation/procedures.png" alt="逆运算转换的思路示意图" title="逆运算转换的思路示意图" width="800" style="display: block; margin: 0 auto;"></li>
+            <li><img src="/static/images/negation/procedures.png" alt="逆运算转换的思路示意图" title="图1 逆运算转换的思路示意图" width="800" style="display: block; margin: 0 auto;"></li>
             <li><p><strong>实验结果：</strong>相较于概率方法，提出的方法在iris数据集和wine数据集上的分类正确率分别提高了1%和2.2%(取前50组划分的平均值)，而且数据不确定性越大，提出方法的优势越明显。</p></li>
-            <li><img src="/static/images/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="iris数据集的实验结果" width="800" style="display: block; margin: 0 auto;"><img src="/static/images/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="wine数据集的实验结果" width="800" style="display: block; margin: 0 auto;"></li>
+            <li><img src="/static/images/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="图2 iris数据集的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="图3 wine数据集的实验结果" width="450" style="display: inline-block;; margin: 0 auto;"></li>
             <li><p><strong>原因分析：</strong>【不确定性表达与冲突处理】1.BPA支持集合级不确定性，允许对复合命题分配概率，显式表达“未知”，避免强行分配概率。Dempster组合规则可合并不同来源的BPA，实现更灵活的冲突处理。</p></li>
             <li><p><strong>可能的改进：</strong>1.为什么不同的权重参数设置之间区别不大？1.1或许是设置的权重值区别本来就不大。 1.2或许是三元素的辨识框架拉不开权重值的差距。</p></li>
-            <li><p><strong>成果产出：</strong>向中科院一区期刊Engineering Applications of Artificial Intelligence投稿该论文。</p></li>
+            <li><p><strong>成果产出：</strong>第二作者身份投稿中科院三区期刊Computational and Applied Mathematics。</p></li>
         </ul>
     </div>
 
@@ -213,9 +79,12 @@
             <li><p><strong>研究目的：</strong>探究不确定性度量指标的选取对证据决策树分类效果的影响。</p></li>
             <li><p><strong>研究动机：</strong>传统决策树对不确定信息的处理会损失分类正确率。已有研究表明证据理论相关概念结合决策树模型能提高其分类表现。然而，如何构建优秀的证据决策树是制约其推广应用的重要难题。</p></li>
             <li><p><strong>主要创新：</strong>本研究实现了基于不同距离度量方法的基本概率指派生成模型，用多种不确定性度量指标以控制证据决策树的分支并且比较其与传统决策树在分类任务上的表现差异。</p></li>
-            <li><p><strong>实验结果：</strong>1.与传统决策树方法相比，选择的两种熵值方法在iris数据集上的分类正确率分别提高了1.3%和1.6%。 2.Deng熵的表现比Nguyen熵更好。 3.不同的距离度量对结果影响较小。</p></li>
-            <li><img src="/static/images/decision tree/Results of each method by Nguyen entropy.png" alt="iris数据集上Nguyen熵的实验结果" title="iris数据集上Nguyen熵的实验结果" width="800" style="display: block; margin: 0 auto;"><img src="/static/images/decision tree/Results of each method by Deng entropy.png" alt="iris数据集上Deng熵的实验结果" title="iris数据集上Deng熵的实验结果" width="800" style="display: block; margin: 0 auto;"></li>
-            <li><p><strong>原因分析：</strong>【对决策树的作用机理】1.1证据理论领域的熵值能有效地度量不确定性，从而保证分割属性按信息含量的降序排列。1.2多个区间的使用保证数据被更合理地划分。 【熵值特性】2.1Deng熵考虑幂集基数，能更好衡量不确定性的粒度。对非单子集(如{A,B})赋予更高不确定性，更符合DST的初衷。2.2Nguyen熵是基于BPA的Shannon熵扩展。它仅依赖BPA值，忽略幂集结构，可能低估冲突证据的不确定性。 【距离性质】3.1这两种距离度量对测试样本与训练样本之间差异性的量化能力相近。3.2也可能与数据分布有关。</p></li>
+            <li><p><strong>实验结果：</strong>1.与传统决策树方法相比，选择的两种熵值方法在iris数据集上的分类正确率分别提高了1.3%和1.6%(取前25组划分的平均值)。 2.Deng熵的表现比Nguyen熵更好。 3.不同的距离度量对结果影响较小。</p></li>
+            <li><img src="/static/images/decision tree/Results of each method by Nguyen entropy.png" alt="iris数据集上Nguyen熵的实验结果" title="图4 iris数据集上Nguyen熵的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/decision tree/Results of each method by Deng entropy.png" alt="iris数据集上Deng熵的实验结果" title="图5 iris数据集上Deng熵的实验结果" width="450" style="display: inline-block; margin: 0 auto;"></li>
+
+            <li><img src="/static/images/decision tree/average accuracy.png" alt="证据决策树平均正确率" title="表1 证据决策树平均正确率" width="800" style="display: block; margin: 0 auto;"></li>
+
+            <li><p><strong>原因分析：</strong>【对决策树的作用机理】1.1证据理论领域的熵值能有效地度量不确定性，从而保证分割属性按信息含量的降序排列。1.2多个区间的使用保证数据被更合理地划分。【熵值特性】2.1Deng熵考虑幂集基数，能更好衡量不确定性的粒度。对非单子集(如{A,B})赋予更高不确定性，更符合DST的初衷。2.2Nguyen熵是基于BPA的Shannon熵扩展。它仅依赖BPA值，忽略幂集结构，可能低估冲突证据的不确定性。【距离性质】3.1这两种距离度量对测试样本与训练样本之间差异性的量化能力相近。3.2也可能与数据分布有关。</p></li>
 <!--             <li><p><strong>可能的改进：</strong>1.为什么没有剪枝策略？1.因为证据决策树几乎没有使用剪枝策略，只有简单的预剪枝。</p></li> -->
             <li><p>
                 <strong>成果产出：</strong>以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表论文，论文已经被EI检索。<a href="https://doi.org/10.1109/ACAI63924.2024.10899481" target="_blank" rel="noopener noreferrer">论文链接</a> <a href="/static/Generating Basic Probability Assignment from the View of Distance Measures and Its Application in Evidential Decision Tree.pdf" target="_blank">查看全文</a> <a href="/static/ACAI 2025CP.pdf">查看会议论文集</a>
@@ -238,7 +107,9 @@
             <li><p><strong>主要创新：</strong>将Kullback-Leibler散度中使用的质量函数拓展成复数质量函数(CM)，进而将信念Jensen-Shannon散度(BJ-SD)拓展成复数信念Jensen-Shannon散度(CVBJ-SD)。相较于原本方法，该散度测量方法具有非负性、对称性、自反性和传递性等优秀特性。</p></li>
             <li><p><strong>研究方法(实验步骤)：</strong>在确定辨识框架后，计算出其幂集分布下各子集所含样本在添加测试集样本前后的标准差和均值的变化量以生成复数质量函数。接下来计算出其对应的CVBJ-SD矩阵，将某属性的散度处理后用作原复数质量函数的权重系数，得到该属性的加权平均证据。最后两两融合属性得到最终的加权平均证据。</p></li>
             <li><p><strong>实验结果：</strong>与原始的融合方法相比，提出的方法在iris数据集、wine数据集和seed数据集上的分类准确率分别提高0.27%、27.2%和0.21%。并且数据的不确定性越大优势越显著。</p></li>
-            <li><p><strong>原因分析：</strong>【表达能力】1.复数证据理论通过引入振幅和相位，更好地表达置信度大小和信息冲突类型，能实现对不确定性信息更准确的建模。 【融合能力】2.Dempster规则在高冲突证据下可能产生反直觉结果（如Zadeh悖例），而复数证据理论通过调整相位，可区分冲突是源于噪声(相位随机变化)还是本质矛盾(相位持续相反)，对噪声更鲁棒（相位信息可过滤部分噪声）。同时复数组合规则能避免过度归一化，保留更多信息，提供更精准的冲突管理，从而提高信息融合效果。</p></li>
+
+            <li><img src="/static/images/divergence/iris fusion.png" alt="iris数据集上复数融合的实验结果" title="图6 iris数据集上复数融合的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/divergence/wine fusion.png" alt="wine数据集上复数融合的实验结果" title="图7 wine数据集上复数融合的实验结果" width="450" style="display: inline-block; margin: 0 auto;"></li>
+            <li><p><strong>原因分析：</strong>【表达能力】1.复数证据理论通过引入振幅和相位，更好地表达置信度大小和信息冲突类型，能实现对不确定性信息更准确的建模。【融合能力】2.Dempster规则在高冲突证据下可能产生反直觉结果（如Zadeh悖例），而复数证据理论通过调整相位，可区分冲突是源于噪声(相位随机变化)还是本质矛盾(相位持续相反)，对噪声更鲁棒（相位信息可过滤部分噪声）。同时复数组合规则能避免过度归一化，保留更多信息，提供更精准的冲突管理，从而提高信息融合效果。</p></li>
 <!--             <li><p><strong>可能的改进：</strong>1.为什么使用变化量来生成CVMF？2.CVBJ-SD弥补了BJ-SD在对称性方面的不足，因为其使用CVKLD替代KLD（为什么？）。</p></li> -->
             <li><p><strong>成果产出：</strong>以第二作者身份投稿中科院三区期刊Computational and Applied Mathematics，将在小修后录用。</p></li>
         </ul>
