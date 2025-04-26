@@ -41,7 +41,7 @@
 
     <div class="p-container">
         <hr>
-        <p>孙一凡，西北农林科技大学数据科学与大数据技术专业大三在读，预计于2026年7月毕业。前五学期的学分成绩为90.54分，GPA为3.79/4.0，在77人的专业中排名第1名(排名占比约1.3%)。主要修读课程有：高等数学（4.0）、算法分析与设计（4.0）、机器学习与数据挖掘（4.0）、深度学习（4.0）等。</p>
+        <p>孙一凡，西北农林科技大学数据科学与大数据技术专业大三在读，预计于2026年7月毕业。前五学期的学分成绩为90.54分，GPA为3.79/4.0，在76人的专业中排名第1名(排名占比约1.3%)。主要修读课程有：高等数学（4.0）、算法分析与设计（4.0）、机器学习与数据挖掘（4.0）、深度学习（4.0）等。</p>
         <hr>
     </div>
 
@@ -49,6 +49,19 @@
     <div style="text-align: center; font-style: italic; color: #666; margin-top: 30px; padding: 10px; border-top: 1px solid #eee;">
         — 最后更新: 2025年4月24日 —
     </div>
+
+    <!-- 在HTML任意位置插入 -->
+    <div id="visit-counter">正在加载访问次数...</div>
+
+    <script>
+      /*替换your-domain为您的网站唯一标识（如github用户名）*/
+      fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('visit-counter').innerText = `总访问量: ${data.value}`;
+        });
+    </script>
+
 
 </div>
 </body>
