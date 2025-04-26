@@ -50,67 +50,67 @@
         — 最后更新: 2025年4月24日 —
     </div>
 
-    <!-- 在HTML任意位置插入 -->
-    <div id="visit-counter">正在加载访问次数...</div>
+<!--    &lt;!&ndash; 在HTML任意位置插入 &ndash;&gt;-->
+<!--    <div id="visit-counter">正在加载访问次数...</div>-->
 
-    <script>
-      (function() {
-        const counterEl = document.getElementById('visit-counter');
-        const updateText = (text) => counterEl.innerText = text;
+<!--    <script>-->
+<!--      (function() {-->
+<!--        const counterEl = document.getElementById('visit-counter');-->
+<!--        const updateText = (text) => counterEl.innerText = text;-->
 
-        // 检查是否支持存储（兼容隐私模式）
-        const canUseStorage = () => {
-          try {
-            localStorage.setItem('test', '1');
-            localStorage.removeItem('test');
-            return true;
-          } catch {
-            return false;
-          }
-        };
+<!--        // 检查是否支持存储（兼容隐私模式）-->
+<!--        const canUseStorage = () => {-->
+<!--          try {-->
+<!--            localStorage.setItem('test', '1');-->
+<!--            localStorage.removeItem('test');-->
+<!--            return true;-->
+<!--          } catch {-->
+<!--            return false;-->
+<!--          }-->
+<!--        };-->
 
-        // 主逻辑
-        if (canUseStorage()) {
-          // 检查是否已存储总访问量（刷新后仍显示）
-          const savedTotalVisits = localStorage.getItem('totalVisits');
-          if (savedTotalVisits) {
-            updateText(`总访问量: ${savedTotalVisits}`);
-            return;
-          }
+<!--        // 主逻辑-->
+<!--        if (canUseStorage()) {-->
+<!--          // 检查是否已存储总访问量（刷新后仍显示）-->
+<!--          const savedTotalVisits = localStorage.getItem('totalVisits');-->
+<!--          if (savedTotalVisits) {-->
+<!--            updateText(`总访问量: ${savedTotalVisits}`);-->
+<!--            return;-->
+<!--          }-->
 
-          // 检查是否已存储本地访问量
-          const savedLocalVisits = localStorage.getItem('localVisits');
-          if (savedLocalVisits) {
-            updateText(`本地访问量: ${savedLocalVisits}`);
-            return;
-          }
-        }
+<!--          // 检查是否已存储本地访问量-->
+<!--          const savedLocalVisits = localStorage.getItem('localVisits');-->
+<!--          if (savedLocalVisits) {-->
+<!--            updateText(`本地访问量: ${savedLocalVisits}`);-->
+<!--            return;-->
+<!--          }-->
+<!--        }-->
 
-        // 首次访问统计
-        updateText('统计中...');
-        fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')
-          .then(res => res.ok ? res.json() : Promise.reject('API响应错误'))
-          .then(data => {
-            updateText(`总访问量: ${data.value}`);
-            if (canUseStorage()) {
-              localStorage.setItem('totalVisits', data.value);
-              localStorage.setItem('counted', 'true');
-            }
-          })
-          .catch(err => {
-            console.error('统计失败:', err);
-            if (canUseStorage()) {
-              const localCount = parseInt(localStorage.getItem('localVisits') || '0') + 1;
-              updateText(`本地访问量: ${localCount}`);
-              localStorage.setItem('localVisits', localCount.toString());
-              localStorage.setItem('counted', 'true');
-            } else {
-              updateText('统计服务不可用');
-            }
-          });
-      })();
-    </script>
-    
+<!--        // 首次访问统计-->
+<!--        updateText('统计中...');-->
+<!--        fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')-->
+<!--          .then(res => res.ok ? res.json() : Promise.reject('API响应错误'))-->
+<!--          .then(data => {-->
+<!--            updateText(`总访问量: ${data.value}`);-->
+<!--            if (canUseStorage()) {-->
+<!--              localStorage.setItem('totalVisits', data.value);-->
+<!--              localStorage.setItem('counted', 'true');-->
+<!--            }-->
+<!--          })-->
+<!--          .catch(err => {-->
+<!--            console.error('统计失败:', err);-->
+<!--            if (canUseStorage()) {-->
+<!--              const localCount = parseInt(localStorage.getItem('localVisits') || '0') + 1;-->
+<!--              updateText(`本地访问量: ${localCount}`);-->
+<!--              localStorage.setItem('localVisits', localCount.toString());-->
+<!--              localStorage.setItem('counted', 'true');-->
+<!--            } else {-->
+<!--              updateText('统计服务不可用');-->
+<!--            }-->
+<!--          });-->
+<!--      })();-->
+<!--    </script>-->
+
 </div>
 </body>
 </html>
