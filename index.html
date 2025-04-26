@@ -54,13 +54,36 @@
     <div id="visit-counter">正在加载访问次数...</div>
 
     <script>
-      /*替换your-domain为您的网站唯一标识（如github用户名）*/
-      fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById('visit-counter').innerText = `总访问量: ${data.value}`;
-        });
+      // 优化版计数器（整合防重复+错误处理）
+      (function() {
+        const counterEl = document.getElementById('visit-counter');
+
+        // 错误处理函数
+        const handleError = () => {
+          counterEl.innerText = '统计加载失败';
+          console.error('CountAPI服务不可用');
+        };
+
+        // 统计逻辑
+        if (!sessionStorage.getItem('counted')) {
+          fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')
+            .then(res => {
+              if (!res.ok) throw new Error(res.status);
+              return res.json();
+            })
+            .then(data => {
+              counterEl.innerText = `总访问量: ${data.value}`;
+              sessionStorage.setItem('counted', 'true');
+            })
+            .catch(handleError);
+        } else {
+          counterEl.innerText = '欢迎回来';
+        }
+      })();
     </script>
+
+
+
 
 
 </div>
