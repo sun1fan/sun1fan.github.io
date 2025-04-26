@@ -58,7 +58,7 @@
         const counterEl = document.getElementById('visit-counter');
         const updateText = (text) => counterEl.innerText = text;
 
-        // 检查是否支持存储
+        // 检查是否支持存储（兼容隐私模式）
         const canUseStorage = () => {
           try {
             localStorage.setItem('test', '1');
@@ -70,17 +70,32 @@
         };
 
         // 主逻辑
-        if (canUseStorage() && localStorage.getItem('counted')) {
-          updateText('欢迎回来');
-          return;
+        if (canUseStorage()) {
+          // 检查是否已存储总访问量（刷新后仍显示）
+          const savedTotalVisits = localStorage.getItem('totalVisits');
+          if (savedTotalVisits) {
+            updateText(`总访问量: ${savedTotalVisits}`);
+            return;
+          }
+
+          // 检查是否已存储本地访问量
+          const savedLocalVisits = localStorage.getItem('localVisits');
+          if (savedLocalVisits) {
+            updateText(`本地访问量: ${savedLocalVisits}`);
+            return;
+          }
         }
 
+        // 首次访问统计
         updateText('统计中...');
         fetch('https://api.countapi.xyz/hit/sun1fan.github.io/visits')
           .then(res => res.ok ? res.json() : Promise.reject('API响应错误'))
           .then(data => {
             updateText(`总访问量: ${data.value}`);
-            if (canUseStorage()) localStorage.setItem('counted', 'true');
+            if (canUseStorage()) {
+              localStorage.setItem('totalVisits', data.value);
+              localStorage.setItem('counted', 'true');
+            }
           })
           .catch(err => {
             console.error('统计失败:', err);
@@ -95,13 +110,7 @@
           });
       })();
     </script>
-
-
-
-
-
-
-
+    
 </div>
 </body>
 </html>
