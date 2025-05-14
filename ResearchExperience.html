@@ -60,7 +60,9 @@
             <li><img src="/static/images/negation/procedures.png" alt="逆运算转换的思路示意图" title="图1 逆运算转换的思路示意图" width="800" style="display: block; margin: 0 auto;"></li>
             <li><p><strong>实验结果：</strong>相较于概率方法，提出的方法在iris数据集和wine数据集上的分类正确率分别提高了1%和2.2%(取前50组划分的平均值)，而且数据不确定性越大，提出方法的优势越明显。</p></li>
             <li><img src="/static/images/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="图2 iris数据集的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="图3 wine数据集的实验结果" width="450" style="display: inline-block;; margin: 0 auto;"></li>
-            <li><p><strong>原因分析：</strong>【不确定性表达与冲突处理】1.BPA支持集合级不确定性，允许对复合命题分配概率，显式表达“未知”，避免强行分配概率。Dempster组合规则可合并不同来源的BPA，实现更灵活的冲突处理。</p></li>
+            <li><p><strong>原因分析：</strong>
+                【不确定性表达与冲突处理】1.BPA支持集合级不确定性，允许对复合命题分配概率，显式表达“未知”，避免强行分配概率。Dempster组合规则可合并不同来源的BPA，实现更灵活的冲突处理。
+            </p></li>
             <li><p><strong>可能的改进：</strong>1.为什么不同的权重参数设置之间区别不大？1.1或许是设置的权重值区别本来就不大。 1.2或许是三元素的辨识框架拉不开权重值的差距。</p></li>
             <li><p><strong>成果产出：</strong>以第一作者身份投稿中科院三区期刊Computational and Applied Mathematics。</p></li>
         </ul>
@@ -84,7 +86,11 @@
 
             <li><img src="/static/images/decision tree/average accuracy.png" alt="证据决策树平均正确率" title="表1 证据决策树平均正确率" width="800" style="display: block; margin: 0 auto;"></li>
 
-            <li><p><strong>原因分析：</strong>【对决策树的作用机理】1.1证据理论领域的熵值能有效地度量不确定性，从而保证分割属性按信息含量的降序排列。1.2多个区间的使用保证数据被更合理地划分。【熵值特性】2.1Deng熵考虑幂集基数，能更好衡量不确定性的粒度。对非单子集(如{A,B})赋予更高不确定性，更符合DST的初衷。2.2Nguyen熵是基于BPA的Shannon熵扩展。它仅依赖BPA值，忽略幂集结构，可能低估冲突证据的不确定性。【距离性质】3.1这两种距离度量对测试样本与训练样本之间差异性的量化能力相近。3.2也可能与数据分布有关。</p></li>
+            <li><p><strong>原因分析：</strong>
+                【对决策树的作用机理】1.1证据理论领域的熵值能有效地度量不确定性，从而保证分割属性按信息含量的降序排列。1.2多个区间的使用保证数据被更合理地划分。
+                【熵值特性】2.1Deng熵考虑幂集基数，能更好衡量不确定性的粒度。对非单子集(如{A,B})赋予更高不确定性，更符合DST的初衷。2.2Nguyen熵是基于BPA的Shannon熵扩展。它仅依赖BPA值，忽略幂集结构，可能低估冲突证据的不确定性。
+                【距离性质】3.1这两种距离度量对测试样本与训练样本之间差异性的量化能力相近。3.2也可能与数据分布有关。
+            </p></li>
 <!--             <li><p><strong>可能的改进：</strong>1.为什么没有剪枝策略？1.因为证据决策树几乎没有使用剪枝策略，只有简单的预剪枝。</p></li> -->
             <li><p>
                 <strong>成果产出：</strong>以第一作者身份在EI会议2024 7th International Conference on Algorithms, Computing and Artificial Intelligence(ACAI 2024)上发表论文，论文已经被EI检索。<a href="https://doi.org/10.1109/ACAI63924.2024.10899481" target="_blank" rel="noopener noreferrer">论文链接</a> <a href="/static/Generating Basic Probability Assignment from the View of Distance Measures and Its Application in Evidential Decision Tree.pdf" target="_blank">查看全文</a> <a href="/static/ACAI 2025CP.pdf" target="_blank">查看会议论文集</a>
@@ -109,27 +115,42 @@
             <li><p><strong>实验结果：</strong>与原始的融合方法相比，提出的方法在iris数据集、wine数据集和seed数据集上的分类准确率分别提高0.27%、27.2%和0.21%。并且数据的不确定性越大优势越显著。</p></li>
 
             <li><img src="/static/images/divergence/iris fusion.png" alt="iris数据集上复数融合的实验结果" title="图6 iris数据集上复数融合的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/divergence/wine fusion.png" alt="wine数据集上复数融合的实验结果" title="图7 wine数据集上复数融合的实验结果" width="450" style="display: inline-block; margin: 0 auto;"></li>
-            <li><p><strong>原因分析：</strong>【表达能力】1.复数证据理论通过引入振幅和相位，更好地表达置信度大小和信息冲突类型，能实现对不确定性信息更准确的建模。【融合能力】2.Dempster规则在高冲突证据下可能产生反直觉结果（如Zadeh悖例），而复数证据理论通过调整相位，可区分冲突是源于噪声(相位随机变化)还是本质矛盾(相位持续相反)，对噪声更鲁棒（相位信息可过滤部分噪声）。同时复数组合规则能避免过度归一化，保留更多信息，提供更精准的冲突管理，从而提高信息融合效果。</p></li>
+            <li><p><strong>原因分析：</strong>
+                【表达能力】1.复数证据理论通过引入振幅和相位，更好地表达置信度大小和信息冲突类型，能实现对不确定性信息更准确的建模。
+                【融合能力】2.Dempster规则在高冲突证据下可能产生反直觉结果（如Zadeh悖例），而复数证据理论通过调整相位，可区分冲突是源于噪声(相位随机变化)还是本质矛盾(相位持续相反)，对噪声更鲁棒（相位信息可过滤部分噪声）。同时复数组合规则能避免过度归一化，保留更多信息，提供更精准的冲突管理，从而提高信息融合效果。</p></li>
 <!--             <li><p><strong>可能的改进：</strong>1.为什么使用变化量来生成CVMF？2.CVBJ-SD弥补了BJ-SD在对称性方面的不足，因为其使用CVKLD替代KLD（为什么？）。</p></li> -->
             <li><p><strong>成果产出：</strong>以第二作者身份投稿中科院三区期刊Computational and Applied Mathematics，将在小修后录用。</p></li>
         </ul>
     </div>
 
-<!--    <div class="p-container">-->
-<!--        <h2>四、证据理论与深度学习</h2>-->
-<!--    </div>-->
-<!--    <div class="desc">-->
-<!--        <p></p>-->
-<!--        <p>自行研究</p>-->
-<!--        <p> &#45;&#45; </p>-->
-<!--    </div>-->
-<!--    <div class="item">-->
-<!--        <ul>-->
-<!--            <li><p><strong></strong></p></li>-->
-<!--            <li><p><strong></strong></p></li>-->
-<!--            <li><p><strong></strong></p></li>-->
-<!--        </ul>-->
-<!--    </div>-->
+    <div class="p-container">
+        <h2>四、证据理论的前沿应用</h2>
+    </div>
+    <div class="desc">
+        <p>自行研究</p>
+        <p>自行研究</p>
+        <p>2025.04至今</p>
+    </div>
+    <div class="item">
+        <ul>
+            <li><p><strong>启发来源：</strong>阅读论文《Deep evidential fusion with uncertainty quantification and reliability learning for multimodal medical image segmentation》。<a href="https://doi.org/10.1016/j.inffus.2024.102648" target="_blank" rel="noopener noreferrer">原文链接</a></p></li>
+            <li><p><strong>提出的框架：(特征提取模块->证据映射模块->多模态证据融合模块)</strong></p></li>
+            <li><p><strong>特征提取模块：</strong>使用医学图像分割领域经典模型Unet。</p></li>
+            <li><img src="/static/images/def/Schematic description of a UNet-based FE module.png"  width="800" style="display: block; margin: 0 auto;"></li>
+            <li><p><strong>证据映射模块：</strong>
+                <img src="/static/images/def/The evidential neural network model.png" width="800" style="display: block; margin: 0 auto;">
+                <br><strong>(原型激活层)</strong>将提取出的特征与原型特征输入特征激活层，得到激活函数值。
+                <br><strong>(质量计算层)</strong>将该函数值按照由学习得到的隶属度分配给类别的单子集，将1-函数值分配给类别的全集。
+                <br><strong>(质量融合层)</strong>按照Dempster正交和规则将上一层得到的质量函数两两融合，输出最终经过融合的质量函数。</p></li>
+            <li><p><strong>多模态证据融合模块：</strong>将每个模态输出的融合后的质量函数进行<strong>上下文折扣操作</strong>，为各个模态学习到适合其的可靠性因子，最后将经过折扣的轮廓函数按照<strong>似真概率转换</strong>得到输出类别的概率值。</p></li>
+            <li><img src="/static/images/def/The proposed deep evidential fusion framework.png" width="800" style="display: block; margin: 0 auto;"></li>
+            <li><p><strong>损失函数：</strong>平衡各模态独立的分割表现与融合之后的分割表现。</p></li>
+            <li><p><strong>可能的改进：</strong>
+                1.使用全部的质量函数以辅助更精确的决策，而不是仅使用轮廓函数。
+                2.使用其他的质量函数修正方法，而不是上下文折扣操作。
+            </p></li>
+        </ul>
+    </div>
 
 
 </div>
