@@ -58,7 +58,7 @@
             <li><p><strong>主要创新：</strong>本研究借助逆运算方法得到已有数据的反面信息，并且在进行建模时充分考虑不同子集的信息特性。</p></li>
             <li><p><strong>研究方法(实验步骤)：</strong>在确定辨识框架后，将概率分布的反面信息以不同的权重参数分配给辨识框架的幂集分布下的各个子集，最后聚合各个子集分配到的信息并通过归一化生成基本概率指派。</p></li>
             <li><img src="/static/images/negation/procedures.png" alt="逆运算转换的思路示意图" title="图1 逆运算转换的思路示意图" width="800" style="display: block; margin: 0 auto;"></li>
-            <li><p><strong>实验结果：</strong>相较于概率方法，提出的方法在iris数据集和wine数据集上的分类正确率分别提高了1%和2.2%(取前50组划分的平均值)，而且数据不确定性越大，提出方法的优势越明显。</p></li>
+            <li><p><strong>实验结果：</strong>相较于概率方法，提出的方法在iris数据集和wine数据集上的分类正确率分别提高了1.3%和1.6%(取前50组划分的平均值)，而且数据不确定性越大，提出方法的优势越明显。</p></li>
             <li><img src="/static/images/negation/Results on iris data set.png" alt="iris数据集的实验结果" title="图2 iris数据集的实验结果" width="450" style="display: inline-block; margin: 0 auto;"><img src="/static/images/negation/Results on wine data set.png" alt="wine数据集的实验结果" title="图3 wine数据集的实验结果" width="450" style="display: inline-block;; margin: 0 auto;"></li>
             <li><p><strong>原因分析：</strong>
                 【不确定性表达与冲突处理】1.BPA支持集合级不确定性，允许对复合命题分配概率，显式表达“未知”，避免强行分配概率。Dempster组合规则可合并不同来源的BPA，实现更灵活的冲突处理。
